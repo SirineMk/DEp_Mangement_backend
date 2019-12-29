@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://example.com/users">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:getUserByEmailRequestRequest>
+            <us:email>sasas@aasas</us:email>
+        </us:getUserByEmailRequestRequest>
+
+    </soapenv:Body>
+</soapenv:Envelope>
