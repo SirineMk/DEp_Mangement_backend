@@ -35,8 +35,8 @@ public class Group implements Serializable {
         this.NameG=name;
     }
 
-   public  String getNameG(){
+    public  String getNameG(){
         return NameG;
-   }
+    }
 
 }

@@ -86,8 +86,8 @@ public class EvaluationController {
     public List<Std_Eval> getEval(@PathVariable Long grp_id, @PathVariable Long sbj_id){
         long id;
         String firstName;
-         String lastName;
-         long NbAbs;
+        String lastName;
+        long NbAbs;
         float NoteDS;
         float NoteExam;
         float Moy;
@@ -109,7 +109,7 @@ public class EvaluationController {
             System.out.print(lastName);
             System.out.print(NbAbs);
             System.out.print(NoteDS);
-                System.out.print(NoteExam);
+            System.out.print(NoteExam);
             Std_Eval cons=new Std_Eval(id,firstName,lastName,NbAbs,NoteDS,NoteExam,Moy);
             listfinal.add(cons);
 

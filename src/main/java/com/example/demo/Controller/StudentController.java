@@ -51,15 +51,13 @@ public class StudentController {
 
 
 
-   /* @RequestMapping(value = "/studentadd/{group_id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody List<Student> AddStudent( @RequestBody Student newstudent , @PathVariable  Long group_id) {
-        Group grp=groupRepository.getGroupById(group_id);
-        newstudent.setGroup(grp);
-            studentRepository.save(newstudent);
-            return studentRepository.findAll();
-
-
-    }*/
+    /* @RequestMapping(value = "/studentadd/{group_id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+     public @ResponseBody List<Student> AddStudent( @RequestBody Student newstudent , @PathVariable  Long group_id) {
+         Group grp=groupRepository.getGroupById(group_id);
+         newstudent.setGroup(grp);
+             studentRepository.save(newstudent);
+             return studentRepository.findAll();
+     }*/
     @RequestMapping(value = "/studentadd/{group_id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody List<Student> AddStudent( @RequestBody Student newstudent , @PathVariable  Long group_id) {
         Group grp=groupRepository.getGroupById(group_id);
@@ -79,7 +77,9 @@ public class StudentController {
             eval.setNoteDS(0);
             evaluationRepository.save(eval);
         }
-        return studentRepository.findAll();
+        List<Student> stdlist=studentRepository.findStudentByGroup(group_id);
+
+        return stdlist;
 
 
     }

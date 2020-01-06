@@ -43,7 +43,6 @@ public class Evaluation implements Serializable {
     /*public EvaluationId getEvaluationId() {
         return this.evaluation;
     }
-
     public void setEvaluationId(EvaluationId evaluationId) {
         this.evaluation = evaluationId;
     }*/

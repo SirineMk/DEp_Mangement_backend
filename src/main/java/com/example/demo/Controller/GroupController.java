@@ -30,7 +30,7 @@ public class GroupController {
     public ResponseEntity<Optional<Group>> getAllGroupsbyName( @PathVariable String name) {
         List<Group> g=groupRepository.findAll();
         Optional<Group> p = g.stream().filter(grp ->name.equals(grp.getNameG())).findAny();
-       // Optional<Student> s = p.stream().filter(prod -> prod.getCategory().getId() == Cat_id).collect(Collectors.toList());
+        // Optional<Student> s = p.stream().filter(prod -> prod.getCategory().getId() == Cat_id).collect(Collectors.toList());
         return ResponseEntity.ok()
                 .body(p);
     }
@@ -45,7 +45,6 @@ public class GroupController {
 
    /*@PostMapping(value = "/group")
     public void AddGroup(@RequestBody final Group group) {
-
             groupRepository.save(group);
            //return "group added successfully ";
     }*/

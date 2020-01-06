@@ -48,7 +48,7 @@ public class ProfController {
 
     @RequestMapping(value = "/profadd", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody String AddProf(@RequestBody Prof newprof
-                                            //, @PathVariable  Long subj_id
+                                        //, @PathVariable  Long subj_id
     ) {
        /* Subject sbj = subjectRepository.findSubjectById(subj_id);
         sbj.setProf(newprof);

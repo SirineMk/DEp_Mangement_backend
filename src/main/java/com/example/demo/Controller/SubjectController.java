@@ -116,23 +116,17 @@ public class SubjectController {
 
      /*@RequestMapping(value = "/subjecUpd/{sbj_id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public  @ResponseBody Subject updateSubj( @PathVariable Long sbj_id, @RequestBody Prof prof) {
-
         Subject sbj = subjectRepository.findSubjectById(sbj_id);
         sbj.setId(sbj_id);
         sbj.setProf(prof.getId());
-
-
         subjectRepository.save(sbj);
         return subjectRepository.findSubjectById(sbj_id);
     }
-
     @RequestMapping(value = "/subjectUpd/{sbj_id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public  @ResponseBody Subject updateSubject( @PathVariable Long sbj_id, @RequestBody Subject newSbj) {
-
         Subject sbj = subjectRepository.findSubjectById(sbj_id);
         sbj.setSubject(newSbj.getSubject());
         sbj.setProf(newSbj.getProf());
-
         subjectRepository.save(sbj);
         return subjectRepository.findSubjectById(sbj_id);
     }*/
